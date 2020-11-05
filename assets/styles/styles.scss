@@ -1,0 +1,33 @@
+@font-face{
+    font-family : "CNESPoster";
+
+    src : url('../../assets/fonts/CNESPOSTER/CNESPoster-Regular.eot');
+    src : url('../../assets/fonts/CNESPOSTER/CNESPoster-Regular.woff') format('woff'),
+          url('../../assets/fonts/CNESPOSTER/CNESPoster-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family : "CNES-SANS";
+
+    src : url('../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.otf');
+    src : url('../../assets/fonts/CNES-SANS/CNESSans-Light.woff') format('woff'),
+          url('../../assets/fonts/CNES-SANS/CNESSans-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family : "CNES-CONDENSED";
+
+    src : url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.otf');
+    src : url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff') format('woff'),
+          url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face{
+    font-family : "CNES-CONDENSED-LIGHT";
+
+    src : url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.eot');
+    src : url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.woff') format('woff'),
+          url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.ttf') format('truetype');
+}
+@import './globals/reset';
+@import './globals/style';
+@import './vendors/calendrier';

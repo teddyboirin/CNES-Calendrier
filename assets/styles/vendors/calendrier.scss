@@ -1,0 +1,259 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.calendar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(195, 227, 97);
+  background: -moz-linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  background: linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  .calendar__background {
+    height: 60vh;
+    width: 90vw;
+    background: black;
+    padding: 30px;
+    display: flex;
+    .calendar__background_left {
+      background: black;
+      width: 40%;
+      height: 100%;
+      h1 {
+        font-family: "CNES-CONDENSED";
+        text-transform: uppercase;
+        font-size: 155px;
+        // color: white;
+        background: rgb(195, 227, 97);
+        background: -moz-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      h2 {
+        font-family: "CNES-CONDENSED-LIGHT";
+        font-size: 125px;
+        text-transform: uppercase;
+        color: white;
+      }
+      h3 {
+        font-family: "CNESPoster";
+        font-size: 66px;
+        text-transform: uppercase;
+        background: rgb(195, 227, 97);
+        background: -moz-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      h4 {
+        font-family: "CNESPoster";
+        text-transform: uppercase;
+        font-size: 207px;
+        background: rgb(195, 227, 97);
+        background: -moz-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        background: linear-gradient(
+          121deg,
+          rgba(195, 227, 97, 1) 0%,
+          rgba(85, 152, 230, 1) 35%,
+          rgba(73, 85, 183, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+
+      .calendar__background_left--first {
+        width: 100%;
+      }
+      .calendar__background_left--second {
+        width: 100%;
+      }
+      .calendar__background_left--third {
+        width: 100%;
+      }
+      .calendar__background-_eft--four {
+        width: 100%;
+      }
+    }
+    .calendar__background_right {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .logo {
+        margin-right: 70px;
+      }
+    }
+  }
+}
+svg {
+  fill: rgb(195, 227, 97);
+  fill: -moz-linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  fill: -webkit-linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  fill: linear-gradient(
+    121deg,
+    rgba(195, 227, 97, 1) 0%,
+    rgba(85, 152, 230, 1) 35%,
+    rgba(73, 85, 183, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+.change {
+  transform: translateY(100px);
+  cursor: pointer;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  background:#DAD8DB;
+}
+.second-container {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+
+
+  .second__part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
+  .second__part--left {
+    h1 {
+      font-size: 35px;
+      color: black;
+      font-family : "CNES-CONDENSED-LIGHT";
+    }
+    h2 {
+      font-size: 35px;
+      color: #60A9DC;
+      font-family : "CNESPoster";
+    }
+    p {
+      font-family : "CNES-CONDENSED-LIGHT";
+      font-size: 40px;
+      color: black;
+      width: 50%;
+      text-align: center;
+    }
+  }
+  
+
+  .second__part--right {
+    height: 100%;
+    width: 50%;
+  }
+}.second-change {
+  height:10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    cursor: pointer;
+  }
+}
