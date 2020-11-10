@@ -6,17 +6,39 @@
 @font-face {
   font-family: "CNES-SANS";
   src: url("../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.otf");
-  src: url("../../assets/fonts/CNES-SANS/CNESSans-Light.woff") format("woff"), url("../../assets/fonts/CNES-SANS/CNESSans-Light.ttf") format("truetype");
+  src: url("../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.woff") format("woff"), url("../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.ttf") format("truetype");
 }
 @font-face {
-  font-family: "CNES-CONDENSED";
-  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.otf");
-  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.ttf") format("truetype");
+  font-family: "CNES-Condensed";
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.eot");
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "CNES-CONDENSED-LIGHT";
-  src: url("../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.eot");
-  src: url("../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.ttf") format("truetype");
+  font-family: "CNES-Condensed";
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.eot");
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff2") format("woff2"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CNES-Condensed";
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.eot");
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.woff2") format("woff2"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "CNES-Condensed";
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.eot");
+  src: url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.woff2") format("woff2"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.woff") format("woff"), url("../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,10 +71,6 @@ body {
   line-height: 1;
 }
 
-ol, ul {
-  list-style: none;
-}
-
 blockquote, q {
   quotes: none;
 }
@@ -68,6 +86,10 @@ table {
   border-spacing: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -79,7 +101,13 @@ table {
     background-position: 0% 50%;
   }
 }
+section {
+  min-height: 100vh !important;
+  position: relative;
+}
+
 .calendar__container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,21 +123,23 @@ table {
   animation: gradient 15s ease infinite;
 }
 .calendar__container .calendar__background {
-  height: 60vh;
   width: 90vw;
   background: black;
   padding: 30px;
   display: flex;
+  margin-bottom: 20px;
 }
 .calendar__container .calendar__background .calendar__background_left {
   background: black;
-  width: 40%;
+  width: 80%;
   height: 100%;
 }
 .calendar__container .calendar__background .calendar__background_left h1 {
   font-family: "CNES-CONDENSED";
   text-transform: uppercase;
-  font-size: 155px;
+  font-size: 205px;
+  font-weight: 700;
+  line-height: 150px;
   background: #c3e361;
   background: -moz-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
   background: -webkit-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
@@ -122,14 +152,16 @@ table {
   animation: gradient 15s ease infinite;
 }
 .calendar__container .calendar__background .calendar__background_left h2 {
-  font-family: "CNES-CONDENSED-LIGHT";
-  font-size: 125px;
+  font-family: "CNES-Condensed";
+  font-weight: 200;
+  font-size: 163px;
   text-transform: uppercase;
   color: white;
+  line-height: 90%;
 }
 .calendar__container .calendar__background .calendar__background_left h3 {
   font-family: "CNESPoster";
-  font-size: 66px;
+  font-size: 86px;
   text-transform: uppercase;
   background: #c3e361;
   background: -moz-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
@@ -145,7 +177,8 @@ table {
 .calendar__container .calendar__background .calendar__background_left h4 {
   font-family: "CNESPoster";
   text-transform: uppercase;
-  font-size: 207px;
+  font-size: 273px;
+  line-height: 210px;
   background: #c3e361;
   background: -moz-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
   background: -webkit-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
@@ -190,15 +223,10 @@ svg {
   -webkit-background-clip: text;
 }
 
-.change {
-  transform: translateY(100px);
-  cursor: pointer;
-}
-
 .second {
   display: flex;
   flex-direction: column;
-  background: #DAD8DB;
+  background: white;
 }
 
 .second-container {
@@ -217,33 +245,242 @@ svg {
 .second-container .second__part--left h1 {
   font-size: 35px;
   color: black;
-  font-family: "CNES-CONDENSED-LIGHT";
+  font-family: "CNES-CONDENSED";
+  font-weight: 50;
 }
 .second-container .second__part--left h2 {
   font-size: 35px;
-  color: #60A9DC;
+  color: #60a9dc;
   font-family: "CNESPoster";
 }
 .second-container .second__part--left p {
-  font-family: "CNES-CONDENSED-LIGHT";
+  font-family: "CNES-CONDENSED";
   font-size: 40px;
   color: black;
   width: 50%;
   text-align: center;
+  font-weight: 50;
+}
+.second-container .second__part--left span {
+  font-weight: 500;
 }
 .second-container .second__part--right {
   height: 100%;
   width: 50%;
 }
 
-.second-change {
-  height: 10vh;
+.third__screen {
+  background: #d5d5d5;
+  height: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+.third__screen .first {
+  margin-top: 30px;
+  font-family: "CNES-Condensed";
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
-.second-change img {
+.third__screen .first p {
+  margin: 10px;
+}
+.third__screen .first span {
+  font-weight: 500;
+}
+.third__screen .first .first-choices {
+  padding: 10px;
+  display: flex;
+}
+.third__screen .first .first-choices .first-choices--item {
+  height: 180px;
+  width: 260px;
+  background: black;
+  padding: 10px;
+  margin: 10px;
+}
+.third__screen .first .first-choices form {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.third__screen .first .first-choices form .top-form {
+  display: flex;
+}
+.third__screen .first .first-choices form .bottom-form {
+  padding: 20px;
+  width: 70%;
+  margin-top: 30px;
+}
+.third__screen .first .first-choices form input[type=radio] {
+  border: 0px;
+  height: 2em;
+  width: 100%;
+  outline: none;
+}
+.third__screen .first .first-choices form input[type=radio]:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  outline: none;
+}
+.third__screen .first .first-choices form input[type=radio]:checked:after {
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  background: #c3e361;
+  background: -moz-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  background: -webkit-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  background: linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+  content: "";
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: inline-block;
+  visibility: visible;
+}
+.third__screen .first .first-choices form select {
+  width: 70%;
+  height: 50px;
+  font-family: "CNES-Condensed";
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.third__screen .first .first-choices form input[type=number], .third__screen .first .first-choices form input[type=email] {
+  height: 50px;
+  width: 33.5%;
+  font-family: "CNES-Condensed";
+  font-size: 25px;
+}
+.third__screen .final-choice {
+  height: 600px;
+  width: 900px;
+  background: black;
+}
+
+.four__screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #c3e361;
+  background: -moz-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  background: -webkit-linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  background: linear-gradient(121deg, #c3e361 0%, #5598e6 35%, #4955b7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c3e361",endColorstr="#4955b7",GradientType=1);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+.four__screen .four__screen_content {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.four__screen .four__screen_content h1 {
+  font-size: 35px;
+  color: black;
+  font-family: "CNES-Condensed";
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.four__screen .four__screen_content h2 {
+  font-size: 40px;
+  color: white;
+  font-family: "CNESPoster";
+  font-weight: 100;
+  text-transform: uppercase;
+  text-align: center;
+}
+.four__screen .four__screen_content ol {
+  width: 60%;
+  margin-top: 40px;
+  font-family: "CNES-Condensed";
+  font-size: 25px;
+  font-weight: 100;
+}
+.four__screen .four__screen_content ol li {
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+.four__screen .four__screen_content ol div {
+  margin-top: 10px;
+}
+.four__screen .four__screen_content ol span {
+  font-weight: 500;
+}
+.four__screen .four__screen_content button {
+  background: black;
+  padding: 15px 30px;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 20px;
   cursor: pointer;
+  transition: 450ms;
+}
+.four__screen .four__screen_content button:hover {
+  background: white;
+  color: black;
+  transition: 450ms;
+}
+
+.change {
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.change span {
+  margin: 10px;
+  font-family: "CNES-Condensed";
+  text-transform: uppercase;
+  font-size: 18px;
+  color: black;
+}
+
+.back {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.back span {
+  margin: 10px;
+  font-family: "CNES-Condensed";
+  text-transform: uppercase;
+  font-size: 18px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

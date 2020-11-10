@@ -9,24 +9,57 @@
     font-family : "CNES-SANS";
 
     src : url('../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.otf');
-    src : url('../../assets/fonts/CNES-SANS/CNESSans-Light.woff') format('woff'),
-          url('../../assets/fonts/CNES-SANS/CNESSans-Light.ttf') format('truetype');
+    src : url('../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.woff') format('woff'),
+          url('../../assets/fonts/CNES-SANS/CNESSans-ExtraLight.ttf') format('truetype');
 }
 
-@font-face{
-    font-family : "CNES-CONDENSED";
-
-    src : url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.otf');
-    src : url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff') format('woff'),
-          url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.ttf') format('truetype');
+@font-face {
+    font-family: 'CNES-Condensed';
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.eot');
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.woff2') format('woff2'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.woff') format('woff'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 
-@font-face{
-    font-family : "CNES-CONDENSED-LIGHT";
+@font-face {
+    font-family: 'CNES-Condensed';
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.eot');
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.woff') format('woff'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
-    src : url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.eot');
-    src : url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.woff') format('woff'),
-          url('../../assets/fonts/CNES-CONDENSED-LIGHT/CNESCondensed-ExtraLight.ttf') format('truetype');
+@font-face {
+    font-family: 'CNES-Condensed';
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.eot');
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.woff') format('woff'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'CNES-Condensed';
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.eot');
+    src: url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.woff2') format('woff2'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.woff') format('woff'),
+        url('../../assets/fonts/CNES-CONDENSED/CNESCondensed-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @import './globals/reset';
 @import './globals/style';

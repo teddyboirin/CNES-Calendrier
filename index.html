@@ -270,25 +270,114 @@
         </div>
       </div>
       <div class="change">
-        <img src="./assets/change.svg" alt="change">
+        <a href="#second"> <img src="./assets/change.svg" alt="change"></a>
       </div>
     </section>
-    <section class="second">
+    <section class="second" id="second">
       <div class="second-container">
         <div class="second__part second__part--left">
           <h1>Nous sommes tous</h1>
           <h2>Explorateurs</h2>
           <p>
             Devenez acteurs
-            de la communication et créez
-            votre propre calendrier avec
+            de la communication et <span>créez
+              votre propre calendrier</span> avec
             la nouvelle identité du CNES !
           </p>
         </div>
         <div class="second__part second__part--right"></div>
       </div>
-      <div class="second-change">
-        <img src="./assets/change.svg" alt="change">
+      <div class="change">
+        <a href="#start"> <img src="./assets/change.svg" alt="change"></a>
+        <span>C'est parti</span>
+      </div>
+
+    </section>
+    <section id="start" class="third__screen">
+      <div class="first">
+        <p>Choix du <span>fond de couleur</span></p>
+        <div class="first-choices">
+          <form action="">
+            <div class="top-form">
+              <div>
+                <label for="white">
+                  <div class="first-choices--item"></div>
+                </label>
+                <input type="radio" id="white" name="drone" value="white" checked>
+              </div>
+
+              <div>
+                <label for="greenBlue">
+                  <div class="first-choices--item"></div>
+                </label>
+                <input type="radio" id="greenBlue" name="drone" value="greenBlue">
+              </div>
+
+              <div>
+                <label for="orangeRed">
+                  <div class="first-choices--item"></div>
+                </label>
+                <input type="radio" id="orangeRed" name="drone" value="orangeRed" size="50px">
+              </div>
+
+              <div>
+                <label for="pinkBlue">
+                  <div class="first-choices--item"></div>
+                </label>
+                <input type="radio" id="pinkBlue" name="drone" value="pinkBlue">
+              </div>
+            </div>
+
+            <div class="bottom-form">
+
+
+              <div>
+                <select name="pets" id="pet-select">
+                  <option value="">Votre direction</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+
+                </select>
+              </div>
+              <div>
+                <input type="email" placeholder="Mon email">
+                <input type="number" placeholder="Quantité d'impression">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="change">
+          <span>Valider</span>
+          <a href="#four"> <img src="./assets/change.svg" alt="change"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="four__screen" id="four">
+      <div class="back">
+        <a href="#start"> <img src="./assets/back.svg" alt="back"></a>
+        <span>Retour</span>
+      </div>
+      <div class="four__screen_content">
+        <h1>Marche à suivre pour</h1>
+        <h2>Envoyer vos photos</h2>
+        <ol>
+          <li><span>Sélectionnez 12 images</span> ayant une taille minimale
+            de 1200 pixels de hauteur X 1500 pixels de largeur.</li>
+          <li><span>Renommez chaque image</span> avec le mois correspondant (exemple : photo-janvier.jpg).
+            <div>
+              <span>Attention</span>, pensez bien choisir vos images, qui ne pourrons pas être changées après votre
+              envoie !
+            </div>
+          </li>
+          <li><span>Envoyez vos images</span> via WeTransfer (ou autre) à l’adresse suivante : eric.medaille@cnes.fr.
+          </li>
+          <li><span>Vous aurez jusqu’au 20/12/2020 pour donner votre accord</span> passé ce délai, votre calendrier ne
+            pourra plus être fabriqué.</li>
+        </ol>
+
+        <button>Envoyer ma demande</button>
       </div>
     </section>
   </main>
