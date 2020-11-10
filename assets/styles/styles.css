@@ -123,6 +123,7 @@ section {
   animation: gradient 15s ease infinite;
 }
 .calendar__container .calendar__background {
+  mix-blend-mode: luminosity;
   width: 90vw;
   background: black;
   padding: 30px;
